@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.insertdataretrofit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.FullScreen"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".review"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".chngAdmin"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".USERUpd"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".WSupd"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Admin"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GRADE"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MICROPHONE" />
+    <uses-feature android:name="android.hardware.audio.pro" />
+    <uses-feature android:name="android.hardware.microphone"/>
+
+</manifest>

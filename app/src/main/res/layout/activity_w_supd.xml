@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WSupd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+
+            android:text="Управление рабочими местами"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="241dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:text="Добавить рабочее место"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/NameWS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:ems="10"
+
+                android:inputType="textPersonName"
+                android:hint="Имя рабочего места"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="260dp" />
+
+            <EditText
+                android:id="@+id/passWS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:hint="Пароль" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/insert_WS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Добавить"
+
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="321dp" />
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@android:color/black" /> 1 <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@android:color/black" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:text="Удалить рабочее место"
+            app:layout_constraintTop_toBottomOf="@+id/button2"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="336dp" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="205dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="20dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="238dp" />
+
+        <Button
+            android:id="@+id/dell_WS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="showAlertWithTwoButton"
+            android:text="Удалить"
+            app:layout_constraintTop_toBottomOf="@+id/spinner2"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="331dp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
