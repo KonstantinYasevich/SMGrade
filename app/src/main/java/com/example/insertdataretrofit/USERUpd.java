@@ -152,7 +152,7 @@ public class USERUpd extends AppCompatActivity {
 
         String name=spinner.getSelectedItem().toString();
         if (name.equals("admin")) {
-            Toast toast = Toast.makeText(WSupd.this, "Невозможно удалить учетную запись Администратора", Toast.LENGTH_LONG);
+            Toast toast = Toast.makeText(USERUpd.this, "Невозможно удалить учетную запись Администратора", Toast.LENGTH_LONG);
             toast.show();
         }
 
