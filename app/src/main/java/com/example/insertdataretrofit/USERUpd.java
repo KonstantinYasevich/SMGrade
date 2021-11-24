@@ -43,13 +43,9 @@ public class USERUpd extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        dbHelper = new DBHelper(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_u_s_e_r_upd);
-
-
-        dbHelper = new DBHelper(this);
-
-
         insert = (Button) findViewById(R.id.insert_User);
         chngUser = (Button) findViewById(R.id.chng_WS);
         // dell = (Button) findViewById(R.id.dell_WS);
@@ -155,6 +151,10 @@ public class USERUpd extends AppCompatActivity {
     private void DellData() {
 
         String name=spinner.getSelectedItem().toString();
+        if (name.equals("admin")) {
+            Toast toast = Toast.makeText(WSupd.this, "Невозможно удалить учетную запись Администратора", Toast.LENGTH_LONG);
+            toast.show();
+        }
 
         Runnable r2 = new deleteUser(name);
         Thread t2 = new Thread(r2);
